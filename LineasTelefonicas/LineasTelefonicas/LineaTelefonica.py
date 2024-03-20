@@ -12,6 +12,7 @@ class LineaTelefonica:
     # Costo total de las llamadas
     costoLlamadas = ""
     
+    estrato = 0
     '''----------------------------------------------------------------
     # Metodos
     ----------------------------------------------------------------'''
@@ -83,4 +84,9 @@ class LineaTelefonica:
         self.numeroLlamadas += 1
         self.numeroMinutos += pMinutos
         self.costoLlamadas += pMinutos * 999
+
+    def darEstrato(self):
+        return self.estrato
+    def definirEstrato(self, pEstrato):
+        self.estrato = pEstrato
 
